@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section {
+  position: relative;
+  width: 300px;
+}
+body section button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+body table tbody tr:hover {
+  cursor: pointer;
+}
