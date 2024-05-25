@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body button {
+  width: 200px;
+}
+body #retry:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+body #colorPicker div {
+  display: flex;
+  align-items: center;
+}
+body #colorPicker div h5 {
+  width: 200px;
+}
+body #colorPicker div p {
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+}
