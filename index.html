@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Sort</title>
+
+  <!--  -->
+  <link rel="stylesheet" href="dist/style.css" />
+
+  <!--  -->
+  <link rel="stylesheet" href="library/bootstrap/bootstrap.css" />
+
+  <!--  -->
+  <link rel="stylesheet" href="library/font-awesome/font-awesome.css" />
+</head>
+
+<body>
+  <header class="container-md mt-3">
+    <section class="d-flex justify-content-between justify-content-md-evenly align-items-center">
+      <button type="button" class="btn btn-primary me-3" onclick="randomColor()">
+        Generate Color
+      </button>
+      <span id="randomColor" class="border"></span>
+    </section>
+  </header>
+
+  <main class="m-5">
+    <section class="d-flex justify-content-center">
+      <button type="button" class="btn btn-success me-5 disabled" onclick="onAddTopToBottom()" id="addBtn">
+        Add
+      </button>
+      <button type="button" class="btn btn-danger disabled" onclick="onRemoveTopToBottom()" id="removeBtn">
+        Remove
+      </button>
+    </section>
+
+    <table class="table table-bordered text-center my-5">
+      <thead>
+        <tr>
+          <th class="text-danger">
+            Red <i class="fa-solid fa-sort ms-2"></i>
+          </th>
+          <th class="text-success">
+            Green <i class="fa-solid fa-sort ms-2"></i>
+          </th>
+          <th class="text-primary">
+            Blue<i class="fa-solid fa-sort ms-2"></i>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+  </main>
+
+  <footer class="m-5">
+    <section class="d-flex justify-content-center">
+      <button type="button" class="btn btn-success me-5 disabled" onclick="onAddBottomToTop()" id="addBtn">
+        Add
+      </button>
+      <button type="button" class="btn btn-danger disabled" onclick="onRemoveBottomToTop()" id="removeBtn">
+        Remove
+      </button>
+    </section>
+  </footer>
+
+  <!--  -->
+  <script src="app.js" defer></script>
+
+  <!--  -->
+  <script src="library/jquery/jquery.js"></script>
+
+  <!--  -->
+  <script src="library/font-awesome/all.min.js"></script>
+</body>
+
+</html>
+
+<!-- <i class="fa-regular fa-copy mx-3"></i> -->
+<!-- <i class="fa-regular fa-hand-scissors mx-3"></i> -->
